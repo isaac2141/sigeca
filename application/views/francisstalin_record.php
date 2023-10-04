@@ -2,7 +2,7 @@
 
 
 echo "Hola Stalin, sica ha vueldo a la vida como SIGECA<br>";
-echo $bienvenido;
+echo $bienvenida;
 
 
 ?>
