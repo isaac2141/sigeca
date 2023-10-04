@@ -7,6 +7,7 @@ public function __construct()
 
 public function index()
 {
+    $data['bienvenida']="Bienvenido soy Stalin Francis";
     $this->load->view('francisstalin_record');
 }
 }

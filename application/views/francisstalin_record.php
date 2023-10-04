@@ -1,6 +1,8 @@
 <?php
 
 
-echo "Hola Stalin, sica ha vueldo a la vida como SIGECA";
+echo "Hola Stalin, sica ha vueldo a la vida como SIGECA<br>";
+echo $bienvenido;
+
 
 ?>
