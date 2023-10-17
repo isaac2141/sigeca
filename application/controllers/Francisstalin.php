@@ -7,7 +7,7 @@ public function __construct()
 
 public function index()
 {
-    $data['bienvenida']="Bienvenido soy Stalin Francis";
+    $data['bienvenida']="Bienvenido soy Stalin Francis estoy en la Ingenieria de Software";
     $this->load->view('francisstalin_record',$data);
 }
 }
