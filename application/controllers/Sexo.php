@@ -18,9 +18,7 @@ public function index(){
 public function add()
 {
 		$data['title']="Nueva Tipo de documento";
-	 	$this->load->view('template/page_header');		
 	 	$this->load->view('sexo_form',$data);
-	 	$this->load->view('template/page_footer');
 
 
 }
@@ -43,9 +41,7 @@ public function add()
 	{
 	 	$data['sexo'] = $this->sexo_model->sexo($this->uri->segment(3))->row_array();
  	 	$data['title'] = "Actualizar sexo";
- 	 	$this->load->view('template/page_header');		
  	 	$this->load->view('sexo_edit',$data);
-	 	$this->load->view('template/page_footer');
  
 	}
 
