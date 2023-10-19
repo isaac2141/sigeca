@@ -26,14 +26,14 @@
 
 
   <tr>
-     <td>Id Tipo Doc:</td>
+     <td>Id:</td>
      <td><?php echo form_input('idsexo',$sexo['idsexo'],array("disabled"=>"disabled",'placeholder'=>'Idsexos')) ?></td>
   </tr>
  
  
  
   <tr>
-     <td>Descripción:</td>
+     <td>Nombre:</td>
      <td><?php echo form_input('nombre',$sexo['nombre'],array("disabled"=>"disabled",'placeholder'=>'nombre')) ?></td>
   </tr>
 
