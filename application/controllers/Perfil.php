@@ -8,7 +8,7 @@ class Perfil extends CI_Controller{
 }
 
 public function index(){
-  $data['perfil']=$this->perfil_model->perfil(1)->row_array();
+  $data['perfil']=$this->perfil_model->lista_perfiles()->row_array();
 
  // print_r($data['usuario_list']);
  	 $data['title']="Lista de Perfiles";
