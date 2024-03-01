@@ -10,7 +10,7 @@
   </tr> 
   <tr>
       <td>Descripcion:</td>
-      <td><?php echo form_input('descripcion',$perfil['descripcion'],array('placeholder'=>'descripcion')) ?></td>
+      <td><?php echo form_input('nombre',$perfil['nombre'],array('placeholder'=>'nombre')) ?></td>
   </tr>
  
  <tr>
