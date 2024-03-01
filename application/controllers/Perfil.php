@@ -66,6 +66,19 @@ public function edit()
  	}
 
 
+
+
+ 	public function delete()
+ 	{
+ 		$data=$this->perfil_model->delete($this->uri->segment(3));
+ 		echo json_encode($data);
+	 	redirect('perfil/elprimero');
+	//	$db['default']['db_debug']=FALSE
+ 	}
+
+
+
+
 public function listar()
 {
 	
