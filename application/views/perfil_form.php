@@ -13,7 +13,7 @@
 
 <tr>
 <td> Descripción </td>
-<td><?php echo form_input("descripcion","", array("placeholder"=>"descripcion"))  ?></td>
+<td><?php echo form_input("nombre","", array("placeholder"=>"nombre"))  ?></td>
 </tr>
 
 <tr>

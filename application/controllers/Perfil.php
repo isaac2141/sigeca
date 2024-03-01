@@ -34,7 +34,7 @@ public function add()
 	 	$array_item=array(
 		 	
 		 	'idperfil' => $this->input->post('idpefil'),
-		 	'descripcion' => $this->input->post('descripcion'),
+		 	'nombre' => $this->input->post('nombre'),
 	 	);
 	 	$this->perfil_model->save($array_item);
 	 	redirect('perfil');
@@ -59,7 +59,7 @@ public function edit()
 	 	$array_item=array(
 		 	
 		 	'idperfil' => $this->input->post('idpefil'),
-		 	'descripcion' => $this->input->post('descripcion'),
+		 	'nombre' => $this->input->post('nombre'),
 	 	);
 	 	$this->perfil_model->update($id,$array_item);
 	 	redirect('perfil');
