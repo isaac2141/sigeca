@@ -1,5 +1,5 @@
 <?php
-
+// modulo de sexo
 class Sexo extends CI_Controller{
 
   public function __construct(){
