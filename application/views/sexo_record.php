@@ -26,7 +26,7 @@
 
 
   <tr>
-     <td>Id:</td>
+     <td>Id Sexo:</td>
      <td><?php echo form_input('idsexo',$sexo['idsexo'],array("disabled"=>"disabled",'placeholder'=>'Idsexos')) ?></td>
   </tr>
  
