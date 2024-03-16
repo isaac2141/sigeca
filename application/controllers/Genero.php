@@ -21,7 +21,7 @@ public function index(){
 
 public function add()
 {
-		$data['title']="Nueva Institución";
+		$data['title']="Nuevo Genero";
 	 	$this->load->view('template/page_header');		
 	 	$this->load->view('genero_form',$data);
 	 	$this->load->view('template/page_footer');

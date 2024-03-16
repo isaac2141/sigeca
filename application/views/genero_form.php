@@ -10,7 +10,7 @@
 
 <tr>
 <td> Nombre </td>
-<td><?php echo form_input("nombre","", array("placeholder"=>"Nombre de la Institucion"))  ?></td>
+<td><?php echo form_input("nombre","", array("placeholder"=>"Genero"))  ?></td>
 </tr>
 
 <tr>
