@@ -1,6 +1,6 @@
 <?php
 
-class Articulo extends CI_Controller{
+class Articulo_controllers extends CI_Controller{
 
   public function __construct(){
       parent::__construct();
@@ -11,14 +11,18 @@ class Articulo extends CI_Controller{
 }
 
 public function index(){
-	
-	  	$data['articulo']=$this->articulo_model->articulo(1)->row_array();
-
-  			$data['title']="Lista de Articulos";
+	if(isset($this->session->userdata['logged_in'])){
+	  	$data['articulo']=$this->articulo_model->elultimo();
+  		$data['instituciones']= $this->institucion_model->lista_instituciones()->result();
+  		$data['title']="Lista de Artiulos";
 			$this->load->view('template/page_header');		
-  			$this->load->view('articulo_record',$data);
+  		$this->load->view('articulo_record',$data);
 			$this->load->view('template/page_footer');
-	
+	}else{
+	 	$this->load->view('template/page_header.php');
+		$this->load->view('login_form');
+	 	$this->load->view('template/page_footer.php');
+	}
 }
 
 
