@@ -1,6 +1,6 @@
 <?php
 
-class Articulo_controllers extends CI_Controller{
+class Articulo extends CI_Controller{
 
   public function __construct(){
       parent::__construct();
@@ -16,7 +16,7 @@ public function index(){
   		$data['instituciones']= $this->institucion_model->lista_instituciones()->result();
   		$data['title']="Lista de Artiulos";
 			$this->load->view('template/page_header');		
-  			$this->load->view('articulo_record',$data);
+  		$this->load->view('articulo_record',$data);
 			$this->load->view('template/page_footer');
 	}else{
 	 	$this->load->view('template/page_header.php');
@@ -81,10 +81,10 @@ public function edit()
 public function listar()
 {
 	
- 	 	$data['title']="Articulo";
-		$this->load->view('template/page_header');		
- 	 	$this->load->view('articulo_list',$data);
-		$this->load->view('template/page_footer');
+  $data['title']="Articulo";
+	$this->load->view('template/page_header');		
+  $this->load->view('articulo_list',$data);
+	$this->load->view('template/page_footer');
 }
 
 function articulo_data()
