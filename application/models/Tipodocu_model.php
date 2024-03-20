@@ -7,7 +7,7 @@ class Tipodocu_model extends CI_model {
 	}
 
 	function lista_tipodocusA(){
-		 $tipodocu= $this->db->get('tipodocu1');
+		 $tipodocu= $this->db->get('tipodocu2');
 		 return $tipodocu;
 	}
 
