@@ -5,7 +5,7 @@ class Aula extends CI_Controller{
   public function __construct(){
       parent::__construct();
       $this->load->model('aula_model');
-      $this->load->model('jornadadocente_model');
+   //   $this->load->model('jornadadocente_model');
   	  $this->load->model('institucion_model');
 }
 
@@ -118,7 +118,7 @@ function aula_data()
 			$draw= intval($this->input->get("length"));
 
 			$idaula=$this->input->get('idaula');
-			$data0 =$this->jornadadocente_model->jornadadocentexaula($idaula);
+	//		$data0 =$this->jornadadocente_model->jornadadocentexaula($idaula);
 			$data=array();
 			foreach($data0->result() as $r){
 				$data[]=array($r->idaula,$r->laasignatura,$r->horainicio,$r->duracionminutos,$r->nombre,$r->nivel,$r->paralelo,
