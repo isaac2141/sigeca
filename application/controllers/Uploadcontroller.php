@@ -8,8 +8,7 @@ class Uploadcontroller extends CI_Controller {
     public function __construct() {
         parent::__construct();
         // Carga la biblioteca de Google Cloud Storage
-//        require_once APPPATH . 'vendor/autoload.php';
-        require_once base_url() . 'vendor/autoload.php';
+        require_once APPPATH . '../vendor/autoload.php';
 
     }
 
