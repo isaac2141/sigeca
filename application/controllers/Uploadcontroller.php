@@ -19,7 +19,7 @@ class Uploadcontroller extends CI_Controller {
     public function do_upload() {
         // Crea una instancia de StorageClient
         $storage = new StorageClient([
-            'projectId' => 'EDUCAYSOFT',
+            'projectId' => 'educaysoft',
             'keyFilePath' => 'https://educaysoft.org/credenciales/educaysoft-5410aa784b8b.json'
         ]);
 
