@@ -20,7 +20,7 @@ class Uploadcontroller extends CI_Controller {
         // Crea una instancia de StorageClient
         $storage = new StorageClient([
             'projectId' => 'educaysoft',
-            'keyFilePath' => '../../credenciales/educaysoft-5410aa784b8b.json'
+            'keyFilePath' => '../credenciales/educaysoft-5410aa784b8b.json'
         ]);
 
         // Obtén una instancia de Bucket
