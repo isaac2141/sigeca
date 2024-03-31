@@ -4,22 +4,21 @@ class Tipoevento extends CI_Controller{
 
   public function __construct(){
       parent::__construct();
-   // $this->load->model('tipoevento_model');
+      $this->load->model('tipoevento_model');
 }
 
 public function index(){
-//	if(isset($this->session->userdata['logged_in'])){
-//		$data['tipoevento']=$this->tipoevento_model->tipoevento(1)->row_array();
-//		$data['title']="Lista de tipoeventoes";
-//		$this->load->view('template/page_header');
-//		$this->load->view('tipoevento_record',$data);
-//		$this->load->view('template/page_footer');
-///}else{
-	 //	$this->load->view('template/page_header.php');
-	//	$this->load->view('login_form');
- //	$this->load->view('template/page_footer.php');
-//}
-
+	if(isset($this->session->userdata['logged_in'])){
+		$data['tipoevento']=$this->tipoevento_model->tipoevento(1)->row_array();
+		$data['title']="Lista de tipoeventoes";
+		$this->load->view('template/page_header');
+		$this->load->view('tipoevento_record',$data);
+		$this->load->view('template/page_footer');
+	}else{
+	 	$this->load->view('template/page_header.php');
+		$this->load->view('login_form');
+	 	$this->load->view('template/page_footer.php');
+	}
 }
 
 
@@ -27,7 +26,7 @@ public function add()
 {
 		$data['title']="Nueva tipoevento";
 	 	$this->load->view('template/page_header');		
- 	$this->load->view('tipoevento_form',$data);
+	 	$this->load->view('tipoevento_form',$data);
 	 	$this->load->view('template/page_footer');
 }
 
