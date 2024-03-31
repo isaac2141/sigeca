@@ -8,17 +8,17 @@ class Paralelo extends CI_Controller{
 }
 
 public function index(){
-	if(isset($this->session->userdata['logged_in'])){
+//	if(isset($this->session->userdata['logged_in'])){
 		$data['paralelo']=$this->paralelo_model->paralelo(1)->row_array();
 		$data['title']="Lista de paraleloes";
 		$this->load->view('template/page_header');
 		$this->load->view('paralelo_record',$data);
 		$this->load->view('template/page_footer');
-	}else{
-	 	$this->load->view('template/page_header.php');
-		$this->load->view('login_form');
-	 	$this->load->view('template/page_footer.php');
-	}
+///	}else{
+//	 	$this->load->view('template/page_header.php');
+//		$this->load->view('login_form');
+//	 	$this->load->view('template/page_footer.php');
+//	}
 }
 
 
