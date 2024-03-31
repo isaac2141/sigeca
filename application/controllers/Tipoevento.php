@@ -4,7 +4,7 @@ class Tipoevento extends CI_Controller{
 
   public function __construct(){
       parent::__construct();
-  //  $this->load->model('tipoevento_model');
+    $this->load->model('tipoevento_model');
 }
 
 public function index(){
@@ -15,10 +15,10 @@ public function index(){
 //		$this->load->view('tipoevento_record',$data);
 //		$this->load->view('template/page_footer');
 ///}else{
-	 	$this->load->view('template/page_header.php');
-		$this->load->view('login_form');
- 	$this->load->view('template/page_footer.php');
-}
+	 //	$this->load->view('template/page_header.php');
+	//	$this->load->view('login_form');
+ //	$this->load->view('template/page_footer.php');
+//}
 
 }
 
