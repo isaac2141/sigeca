@@ -29,7 +29,7 @@ public function add()
 	 	$this->load->view('template/page_header');		
  	$this->load->view('tipoevento_form',$data);
 	 	$this->load->view('template/page_footer');
-/}
+}
 
 
 public function  save()
