@@ -9,11 +9,11 @@ class Tipoevento extends CI_Controller{
 
 public function index(){
 //	if(isset($this->session->userdata['logged_in'])){
-		$data['tipoevento']=$this->tipoevento_model->tipoevento(1)->row_array();
-		$data['title']="Lista de tipoeventoes";
-		$this->load->view('template/page_header');
-		$this->load->view('tipoevento_record',$data);
-		$this->load->view('template/page_footer');
+//		$data['tipoevento']=$this->tipoevento_model->tipoevento(1)->row_array();
+//		$data['title']="Lista de tipoeventoes";
+//		$this->load->view('template/page_header');
+//		$this->load->view('tipoevento_record',$data);
+//		$this->load->view('template/page_footer');
 ///}else{
 	 	$this->load->view('template/page_header.php');
 		$this->load->view('login_form');
@@ -23,13 +23,13 @@ public function index(){
 }
 
 
-//public function add()
-///{
-//		$data['title']="Nueva tipoevento";
-//	 	$this->load->view('template/page_header');		
-//	 	$this->load->view('tipoevento_form',$data);
-//	 	$this->load->view('template/page_footer');
-//}
+public function add()
+{
+		$data['title']="Nueva tipoevento";
+	 	$this->load->view('template/page_header');		
+ 	$this->load->view('tipoevento_form',$data);
+	 	$this->load->view('template/page_footer');
+/}
 
 
 public function  save()
