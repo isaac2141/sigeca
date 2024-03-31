@@ -6,10 +6,10 @@ class Tipoevento_model extends CI_model {
 		 return $tipoevento;
 	}
 
- 	function tipoevento( $id){
- 		$tipoevento = $this->db->query('select * from tipoevento where idtipoevento="'. $id.'"');
- 		return $tipoevento;
- 	}
+ 	///function tipoevento( $id){
+ 	//	$tipoevento = $this->db->query('select * from tipoevento where idtipoevento="'. $id.'"');
+ 	//	return $tipoevento;
+ 	//}
 
  	function save($array)
  	{
