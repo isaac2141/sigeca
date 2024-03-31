@@ -25,7 +25,7 @@ parent::__construct();
 // Show login page
 public function index() {
 	
-	 $data['eventos']= $this->evento_model->lista_eventos_open(0)->result();
+//	 $data['eventos']= $this->evento_model->lista_eventos_open(0)->result();
 	 $data['eventos']="";
 	 $this->load->view('template/page_header.php');
 	 $this->load->view('login_form',$data);
