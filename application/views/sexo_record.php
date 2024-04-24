@@ -18,36 +18,22 @@
 
 
 <?php echo form_hidden('idsexo',$sexo['idsexo']) ?>
-<table>
+    <label class="col-md-2 col-form-label"> Id Tipo Doc:</label>
+	<div class="col-md-10">
 
-
+     <?php echo form_input('idsexo',$sexo['idsexo'],array("disabled"=>"disabled",'placeholder'=>'Idsexos')) ?>
  
- 
+	</div> 
+</div> 
 
+<div class="form-group row">
+    <label class="col-md-2 col-form-label"> Descripcion:</label>
+	<div class="col-md-10">
 
-  <tr>
-     <td>Id Sexo:</td>
-     <td><?php echo form_input('idsexo',$sexo['idsexo'],array("disabled"=>"disabled",'placeholder'=>'Idsexos')) ?></td>
-  </tr>
- 
- 
- 
-  <tr>
-     <td>Nombre:</td>
-     <td><?php echo form_input('nombre',$sexo['nombre'],array("disabled"=>"disabled",'placeholder'=>'nombre')) ?></td>
-  </tr>
+     <?php echo form_input('nombre',$sexo['nombre'],array("disabled"=>"disabled",'placeholder'=>'nombre')) ?>
 
-
-  
-
-
-
-
-
-
-
-
-</table>
+	</div> 
+</div> 
 <?php echo form_close(); ?>
 
 
