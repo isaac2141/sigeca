@@ -20,7 +20,7 @@
     <label class="col-md-2 col-form-label"> Id:</label>
 	<div class="col-md-10">
 
-     <?php echo form_input('idgenero',$sgenero['idgenero'],array("disabled"=>"disabled",'placeholder'=>'Idgeneros')) ?>
+     <?php echo form_input('idgenero',$genero['idgenero'],array("disabled"=>"disabled",'placeholder'=>'Idgeneros')) ?>
  
 	</div> 
 </div> 
