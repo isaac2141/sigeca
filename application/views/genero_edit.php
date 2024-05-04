@@ -19,9 +19,11 @@
 
 	</div> 
 </div> 
+
 <div class="form-group row">
 	<div class="col-md-10">
     <hr><?php echo form_submit("submit", "Guardar"); ?><?php echo anchor("genero","Atras") ?>
+</div>
 </div>
 <?php echo form_close(); ?>
 
