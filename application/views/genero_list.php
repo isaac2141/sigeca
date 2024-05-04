@@ -5,7 +5,7 @@
 
 <h2> <?php echo $title;  ?></h2>
 <hr/>
-<?php echo anchor('genero/add', 'Listado de Géneros Registrados'); ?>
+<?php echo anchor('genero/add', 'Ingresar Nuevo Género'); ?>
 <br>
 <br>
 
