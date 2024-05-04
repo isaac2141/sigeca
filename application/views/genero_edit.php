@@ -6,7 +6,7 @@
     <label class="col-md-2 col-form-label"> Id:</label>
 	<div class="col-md-10">
 
-     <?php echo form_input('idgenero',$genero['idgenero'],array("disabled"=>"disabled",'placeholder'=>'Idgeneros')) ?>
+  <?php echo form_textarea('idgenero',$genero['idgenero'],array('placeholder'=>'Idgenero')) ?>
  
 	</div> 
 </div> 
@@ -15,13 +15,13 @@
     <label class="col-md-2 col-form-label"> Nombre:</label>
 	<div class="col-md-10">
  
-     <?php echo form_input('nombre',$genero['nombre'],array("disabled"=>"disabled",'placeholder'=>'nombre')) ?>
+  <?php echo form_input('nombre',$genero['nombre'],array('placeholder'=>'Nombre genero')) ?>
 
 	</div> 
 </div> 
- 
 <div class="form-group row">
 	<div class="col-md-10">
     <hr><?php echo form_submit("submit", "Guardar"); ?><?php echo anchor("genero","Atras") ?>
 </div>
 <?php echo form_close(); ?>
+
