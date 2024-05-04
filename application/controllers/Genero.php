@@ -11,7 +11,7 @@ public function index(){
 
 	  	$data['genero']=$this->genero_model->genero(1)->row_array();
 
-  		$data['title']="Lista de Generos";
+  		$data['title']="Géneros";
 		$this->load->view('template/page_header');		
   		$this->load->view('genero_record',$data);
 		$this->load->view('template/page_footer');

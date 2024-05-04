@@ -5,15 +5,15 @@
 
 <h2> <?php echo $title;  ?></h2>
 <hr/>
-<?php echo anchor('genero/add', 'NUEVO ORDENADOR'); ?>
+<?php echo anchor('genero/add', 'Ingresar Nuevo Género'); ?>
 <br>
 <br>
 
 <table border="1">
 <tr>
-<th> ID ORDENADOR</th>
-<th> DESCRIPCION</th>
-<th> cantidad</th>
+<th> Id Género</th>
+<th> Descripción</th>
+<th> Cantidad</th>
 </tr>
 <tbody>
 <?php  foreach($generos as $list) { ?>
