@@ -18,7 +18,7 @@
 
 
 <?php echo form_hidden('idtipodocu',$tipodocu['idtipodocu']) ?>
-<div class=' form-group row'>
+<div class='form-group row'>
   <label class='col-md-2 col-form-label'>Id:</label>
   <div class='col-md-10'>
     <?php echo form_input('idtipodocu',$tipodocu['idtipodocu'],array("disabled"=>"disabled",'placeholder'=>'Idtipodocus')) ?>
