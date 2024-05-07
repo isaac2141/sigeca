@@ -23,7 +23,7 @@
     </div>
 </div>
       <label class='col-md-2 col-form-label'>Descripción:</label>
-      <div class='col-md-10'>
+      <div class='col-md-8'>
         <?php echo form_input('descripcion',$tipodocu['descripcion'],array("disabled"=>"disabled",'placeholder'=>'descripcion')) ?>
       </div>
 </div>
