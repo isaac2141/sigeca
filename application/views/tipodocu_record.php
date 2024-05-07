@@ -22,7 +22,7 @@
       <?php echo form_input('idtipodocu',$tipodocu['idtipodocu'],array("disabled"=>"disabled",'placeholder'=>'Idtipodocus')) ?>
     </div>
 </div>
-<div class='form-group-2'>
+<div class='form-group row'>
       <label class='col-md-2 col-form-label'>Descripción:</label>
       <div class='col-md-10'>
         <?php echo form_input('descripcion',$tipodocu['descripcion'],array("disabled"=>"disabled",'placeholder'=>'descripcion')) ?>
