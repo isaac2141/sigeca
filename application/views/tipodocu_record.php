@@ -2,6 +2,7 @@
   <h3 style="text-align: left; margin-top:-10px;"> <?php echo $title;  ?></h3>
   <?php echo form_open('tipodocu/save_edit') ?>
     <ul>
+      <li> <?php echo anchor('tipodocu/elprimero/', 'primero'); ?></li>
       <li> <?php echo anchor('tipodocu/anterior/'.$tipodocu['idtipodocu'], 'anterior'); ?></li>
       <li> <?php echo anchor('tipodocu/siguiente/'.$tipodocu['idtipodocu'], 'siguiente'); ?></li>
       <li style="border-right:1px solid green"><?php echo anchor('tipodocu/elultimo/', 'Último'); ?></li>
@@ -9,7 +10,6 @@
       <li> <?php echo anchor('tipodocu/edit/'.$tipodocu['idtipodocu'],'Edit'); ?></li>
       <li style="border-right:1px solid green"> <?php echo anchor('tipodocu/delete/'.$tipodocu['idtipodocu'],'Delete'); ?></li>
       <li> <?php echo anchor('tipodocu/listar/','Listar'); ?></li>
-      <li> <?php echo anchor('tipodocu/elprimero/', 'primero'); ?></li>
     </ul>
 </div>
 <br>
