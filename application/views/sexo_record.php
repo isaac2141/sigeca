@@ -18,14 +18,12 @@
 
 
 <?php echo form_hidden('idsexo',$sexo['idsexo']) ?>
-    <label class="col-md-2 col-form-label"> Id Tipo Doc:</label>
+<div class="form-group row">
+    <label class="col-md-2 col-form-label"> Id:</label>
 	<div class="col-md-10">
-
-     <?php echo form_input('idsexo',$sexo['idsexo'],array("disabled"=>"disabled",'placeholder'=>'Idsexos')) ?>
- 
+        <?php echo form_input('idsexo',$sexo['idsexo'],array("disabled"=>"disabled",'placeholder'=>'Idsexos')) ?>
 	</div> 
 </div> 
-
 <div class="form-group row">
     <label class="col-md-2 col-form-label"> Descripcion:</label>
 	<div class="col-md-10">
