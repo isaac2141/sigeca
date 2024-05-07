@@ -9,7 +9,7 @@
     </div>
 </div>
 <div class="form-group row">
-  <label class='col-md-2 col-form-label'>Nombre:</label>
+  <label class='col-md-2 col-form-label'>Descripción:</label>
     <div class='col-md-10'>
         <?php echo form_input('descripcion',$tipodocu['descripcion'],array('placeholder'=>'Nombre tipodocu')) ?>
     </div>
